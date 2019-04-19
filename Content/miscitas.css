@@ -23,6 +23,7 @@ body {
     grid-template-areas: 'sidebarArea headerArea'
                          'sidebarArea mainArea'
                          'footerArea footerArea';
+    min-height: 100vh;
 }
 
 .sidebar {
@@ -67,7 +68,7 @@ body {
 }
 
 .lang-buttons {
-    padding: 12px 0px;
+    padding: 12px 26px 12px 0px;
 }
 
 .btn-lang {
@@ -75,8 +76,7 @@ body {
     background-color: transparent;
     border: 1px solid;
     border-radius: 5px;
-    margin-right: 8px;
-    margin-left: 8px;
+    margin: 5px;
 }
 
 .main {
@@ -113,11 +113,55 @@ body {
 }
 
 
-.tab-content {
-    margin-top: 30px;
+.pormed-tabs-container {
+    display: block;
+}
+
+.pormed-tabs-wrapper {
+    display: inline-block;
 }
 
 
+.pormed-tabs-title {
+    color: white;
+    background-color: #28ABE1;
+    padding: 5px 10px 5px 10px;
+    text-transform: uppercase;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+.pormed-tabs {
+    margin: 0;
+    padding: 0 10px 0 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pormed-tabs>li>a {
+    margin-right: 1px;
+    padding: 10px;
+    line-height: 2.9;
+    background-color: #e9e9e9;
+    border: 1px solid transparent;
+    border-radius: 0 0 5px 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #4d4d4d;
+}
+
+.pormed-tabs>li.active>a {
+    color: white;
+    background-color: #28ABE1;
+}
+
+.tab-content {
+    margin-top: 30px;
+}
 
 .pormed-card {
     /* border: 1px solid red; */
