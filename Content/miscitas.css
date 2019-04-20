@@ -27,6 +27,8 @@ body {
 }
 
 .sidebar {
+    /* position: fixed;
+    height: calc(100vh - 44px); */
     grid-area: sidebarArea;
     background-color: #28ABE1;
     color: white;
@@ -45,25 +47,30 @@ body {
 }
 
 .sidebar a:hover {
+    color: white;
     background-color: #69C4EA;
 }
 
 .header {
     grid-area: headerArea;
-    color: white;
-    display: flex;
-    justify-content: space-between;
     background-color: #454545;
 }
 
-.header .pormed-logosimbolo img {
+.header-wrapper {
+    grid-area: headerArea;
+    width: calc(100vw - 20px - 62px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-wrapper .pormed-logosimbolo img {
     height: 130px;
 }
-.header .pormed-logo {
+.header-wrapper .pormed-logo {
     align-self: center;
 }
 
-.header .pormed-logo img {
+.header-wrapper .pormed-logo img {
     height: 80px;
 }
 
@@ -187,5 +194,9 @@ body {
 .pormed-card-details p {
     margin: 0;
     color: #4d4d4d;
-    font-size: .9rem;
+    font-size: 1.1rem;
+}
+
+.upper {
+    text-transform: uppercase;
 }
