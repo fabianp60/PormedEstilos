@@ -8,6 +8,11 @@
     padding-right: 5px;
 }
 
+.py-40px {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 body {
     /* background: url("../Pantallas/Pantalla\ mis\ citas.png");
     background-repeat: no-repeat;
@@ -16,13 +21,10 @@ body {
     padding: 0;
 }
 
-
 .pormed-wrapper {
     display: grid;
     grid-template: 130px 1fr 44px / 62px 1fr;
-    grid-template-areas: 'sidebarArea headerArea'
-                         'sidebarArea mainArea'
-                         'footerArea footerArea';
+    grid-template-areas: 'sidebarArea headerArea' 'sidebarArea mainArea' 'footerArea footerArea';
     min-height: 100vh;
 }
 
@@ -66,6 +68,7 @@ body {
 .header-wrapper .pormed-logosimbolo img {
     height: 130px;
 }
+
 .header-wrapper .pormed-logo {
     align-self: center;
 }
@@ -88,7 +91,8 @@ body {
 
 .main {
     grid-area: mainArea;
-    padding: 40px 70px 40px 95px;
+    padding-left: 95px;
+    padding-right: 70px;
 }
 
 .footer {
@@ -119,7 +123,6 @@ body {
     border-left: 1px solid white;
 }
 
-
 .pormed-tabs-container {
     display: block;
 }
@@ -127,7 +130,6 @@ body {
 .pormed-tabs-wrapper {
     display: inline-block;
 }
-
 
 .pormed-tabs-title {
     color: white;
